@@ -6,64 +6,127 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HBN</title>
-    <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css" />
-    <style type="text/css">
-        html,
-        body {
-            font-family: 'Open Sans';
-			background-image: url("bg.png");
-			overflow: hidden;
-			height: 100%;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-        }
-		
-		.buttonimg {
-			border: 0;
-			padding-left: 0;
-			margin-right: 0.5em;
-		}
-    </style>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@1.0.0/css/bulma.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
 </head>
 
 <body>
-	<div class="bg-image"></div>
     <section class="hero is-fullheight is-default is-bold">
         <div class="hero-body">
             <div class="container has-text-centered">
-                <div class="columns is-vcentered">
-                    <div class="column is-half is-offset-one-quarter">
-						<div style="background-color:rgba(255, 255, 255, 0.5);padding: 1em;border-radius: 50px;">
-							<h1 class="title is-1" style="font-size: 750%; padding: 0.5em 0;">
-								ヽ(•‿•)ノ
-							</h1>
-							<h1 class="title is-2">
-								How Bout No
-							</h1>
-							<h2 class="subtitle is-4">
-								Hey! I make mods and stuff. Don't have much to put here right now.
-							</h2>
-						</div>
-                        <br>
-                        <p class="has-text-centered">
-							<a class="button is-medium is-info" href="https://github.com/How-Bout-No">
-								<img height="32" width="32" src="https://unpkg.com/simple-icons@v4/icons/github.svg" class="buttonimg" />Github
+                <div class="box">
+                    <figure class="image is-128x128 container">
+                        <img class="pfp" draggable="false"
+                            src="http://www.gravatar.com/avatar/ac66cba7521ed7d030de19369489f026?s=128" />
+                    </figure>
+                    <h1 class="title is-2">
+                        How Bout No
+                    </h1>
+                    <h2 class="subtitle is-4">
+                        Hey! I make mods and stuff. Don't have much to put here right now.
+                    </h2>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <a class="button is-medium is-info is-fullwidth" title="Github"
+                                href="https://github.com/How-Bout-No">
+                                <img height="32" width="32" src="https://unpkg.com/simple-icons@v16/icons/github.svg"
+                                    class="buttonimg" />Github
                             </a>
-							<a class="button is-medium is-info" href="https://www.curseforge.com/members/howboutno/projects">
-								<img height="32" width="32" src="https://unpkg.com/simple-icons@v4/icons/curseforge.svg" class="buttonimg" />Curse
+                        </div>
+                        <div class="level-item has-text-centered">
+                            <a class="button is-medium is-info is-fullwidth" title="Curseforge"
+                                href="https://www.curseforge.com/members/howboutno/projects">
+                                <img height="32" width="32"
+                                    src="https://unpkg.com/simple-icons@v16/icons/curseforge.svg"
+                                    class="buttonimg" />Curse
                             </a>
-							<a class="button is-medium is-info" href="https://twitter.com/hbndev">
-								<img height="32" width="32" src="https://unpkg.com/simple-icons@v4/icons/twitter.svg" class="buttonimg" />Twitter
-                            </a>
-                        </p>
+                        </div>
+                    </nav>
+                </div>
+                <div class="box">
+                    <h1 title="Repos" class="title is-2">
+                        Projects
+                    </h1>
+                    <div class="fixed-grid">
+                        <div class="grid">
+                            <div class="cell">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <figure class="image is-16by9">
+                                            <img src="image/outvoted.webp" title="Outvoted" alt="Outvoted" />
+                                        </figure>
+                                    </div>
+                                    <div class="card-content">
+                                        <h1 class="title is-4">Outvoted<br><span class="tag">Creator</span></h1>
+                                        <div class="content">
+                                            <i>A Minecraft mod that adds in mobs from previous mob votes that weren't able
+                                            to make it into the game, trying to stay true to the original concepts.</i>
+                                            <br><br>
+                                            Over 7M+ Downloads
+                                        </div>
+                                    </div>
+                                    <footer class="card-footer">
+                                        <a href="https://www.curseforge.com/minecraft/mc-mods/outvoted"
+                                            title="Curseforge" class="card-footer-item">
+                                            <img height="32" width="32"
+                                                src="https://cdn.simpleicons.org/curseforge" /></a>
+                                        <a href="https://modrinth.com/mod/outvoted" title="Modrinth"
+                                            class="card-footer-item">
+                                            <img height="32" width="32"
+                                                src="https://cdn.simpleicons.org/modrinth" /></a>
+                                        <a href="https://github.com/How-Bout-No/Outvoted" title="Github Source"
+                                            class="card-footer-item">
+                                            <img height="32" width="32"
+                                                src="https://cdn.simpleicons.org/github/_/white" /></a>
+                                    </footer>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <figure class="image is-16by9">
+                                            <img src="image/ss.webp" title="SSV2" alt="SSV2" />
+                                        </figure>
+                                    </div>
+                                    <div class="card-content">
+                                        <h1 class="title is-4">Samurai's Scripts<br><span class="tag">Contributor</span>
+                                        </h1>
+                                        <div class="content">
+                                            <i>A modular GTA V Lua framework focused on enhancing the player's experience
+                                            through fun features, online business options, and unpopular opinions.</i>
+                                            <br><br>
+                                            My contributions focus on Enhanced compatibility and the addition of a heist editor.
+                                        </div>
+                                    </div>
+                                    <footer class="card-footer">
+                                        <a href="https://github.com/YimMenu-Lua/Samurais-Scripts" title="Github Source"
+                                            class="card-footer-item">
+                                            <img height="32" width="32"
+                                                src="https://cdn.simpleicons.org/github/_/white" /></a>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="hero-foot">
+            <div class="container has-text-centered">
+                <p style="font-size: 60%;">
+                    Made using
+                    <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.
+                    The source code is licensed
+                    <a href="https://opensource.org/license/mit">MIT</a>. The
+                    website content is licensed
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0//">CC BY NC SA 4.0</a>.
+                </p>
+            </div>
+        </div>
     </section>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,34 @@
+html,
+body {
+    font-family: 'Open Sans';
+    overflow: auto;
+    height: 100%;
+    background-image:
+        linear-gradient(transparent, black),
+        url("../image/bg.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.buttonimg {
+    border: 0;
+    padding-left: 0;
+    margin-right: 0.5em;
+}
+
+.pfp {
+    transition: transform 0.1s ease;
+    border: 2px solid var(--bulma-text);
+}
+
+.card {
+    transition: transform 0.1s ease;
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+.card:hover {
+    z-index: 1;
+}
