@@ -3,11 +3,9 @@ body {
     font-family: 'Open Sans';
     overflow: auto;
     height: 100%;
-    background-image:
-        linear-gradient(transparent, black),
-        url("../image/bg.webp");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.8));
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
 }
 
@@ -31,4 +29,13 @@ body {
 
 .card:hover {
     z-index: 1;
+}
+
+#panorama {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    z-index: -1;
 }
